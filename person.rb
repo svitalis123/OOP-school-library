@@ -1,8 +1,7 @@
-class Nameable
-  def correct_name
-    raise NotImplementedError, "#{self.class} has not implemented method #{__method__}"
-  end
-end
+require './nameable'
+require './basedecorater'
+require './capitaldecorator'
+require './trimmerdecorator'
 
 class Person < Nameable
   def initialize(age, name = 'unknown', parent_permission: true)
@@ -27,29 +26,6 @@ class Person < Nameable
 
   def of_age?
     @age >= 18
-  end
-end
-
-class BaseDecorator < Nameable
-  def initialize(nameable)
-    super()
-    @nameable = nameable
-  end
-
-  def correct_name
-    @nameable.correct_name
-  end
-end
-
-class CapitalizeDecorator < BaseDecorator
-  def correct_name
-    @nameable.correct_name.split.map(&:capitalize).join(' ')
-  end
-end
-
-class TrimmerDecorator < BaseDecorator
-  def correct_name
-    @nameable.correct_name.size > 10 ? @nameable.correct_name[0..9] : @nameable.correct_name
   end
 end
 
