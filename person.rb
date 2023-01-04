@@ -1,21 +1,21 @@
-require './nameable.rb'
-require './basedecorater.rb'
-require './capitaldecorator.rb'
-require './trimmerdecorater.rb'
-require './book.rb'
-require './rental.rb'
+require './nameable'
+require './basedecorater'
+require './capitaldecorator'
+require './trimmerdecorater'
+require './book'
+require './rental'
 class Person < Nameable
   attr_accessor :name, :age, :rentals
   attr_reader :id
+
   def initialize(age, name = 'unknown', parent_permission: true)
     super()
     @id = Random.rand(1..10_000)
     @name = name
     @age = age
     @parent_permission = parent_permission
-    @rentals=[]
+    @rentals = []
   end
-  
 
   def correct_name
     @name
@@ -39,10 +39,3 @@ print Capitalized_Person.correct_name
 puts "\n\n"
 Capitalized_Trimmed_Person = TrimmerDecorator.new(Capitalized_Person)
 print Capitalized_Trimmed_Person.correct_name
-add_r=Book.new("Kingdom seeking","munene")
-add_q=Book.new("redux","vitalis")
-
-ren_1=Rental.new("22-18-9", person, add_r)
-puts "\n\n"
-print person.rentals.count
-print add_r.rentals.map { |rent| rent.person}
