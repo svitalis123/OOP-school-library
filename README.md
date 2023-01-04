@@ -98,8 +98,13 @@ Clone this repository to your desired folder:
 - Twitter: [@WilsonVitalis](https://twitter.com/WilsonVitalis)
 - LinkedIn: [vitalismutwiri](https://www.linkedin.com/in/vitalismutwiri/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- FUTURE FEATURES -->
+
 ## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[extension of the library]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
