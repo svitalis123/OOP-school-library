@@ -8,7 +8,6 @@ class Person < Nameable
   attr_accessor :name, :age
   attr_reader :id, :rentals, :parent_permission
 
-  # rubocop:disable-next-line
   def initialize(age, parent_permission, name = 'unknown')
     super()
     @id = Random.rand(1..10_000)
