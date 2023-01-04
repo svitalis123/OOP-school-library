@@ -5,10 +5,11 @@ require './trimmerdecorater'
 require './book'
 require './rental'
 class Person < Nameable
-  attr_accessor :name, :age, :rentals
-  attr_reader :id
+  attr_accessor :name, :age
+  attr_reader :id, :rentals, :parent_permission
 
-  def initialize(age, name = 'unknown', parent_permission: true)
+  # rubocop:disable-next-line
+  def initialize(age, parent_permission, name = 'unknown')
     super()
     @id = Random.rand(1..10_000)
     @name = name
@@ -17,8 +18,8 @@ class Person < Nameable
     @rentals = []
   end
 
-  def add_rental(date, person)
-    Rental.new(date, self, person)
+  def add_rental(date, book)
+    Rental.new(date, book, self)
   end
 
   def correct_name
@@ -39,7 +40,7 @@ end
 person = Person.new(22, 'maximilianus')
 person.correct_name
 Capitalized_Person = CapitalizeDecorator.new(person)
-print Capitalized_Person.correct_name
+Capitalized_Person.correct_name
 puts "\n\n"
 Capitalized_Trimmed_Person = TrimmerDecorator.new(Capitalized_Person)
-print Capitalized_Trimmed_Person.correct_name
+Capitalized_Trimmed_Person.correct_name
