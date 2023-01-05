@@ -1,5 +1,5 @@
 require './app'
-class App
+class Main
   def self.menu
     puts 'Welcome to the School Library App!'
     puts "\n"
