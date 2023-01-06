@@ -17,7 +17,7 @@ class Main
     @list.each do |index, string|
       puts "#{index} - #{string}"
     end
-    Integer(gets.chomp)
+    Integer(gets.chomps)
   end
   compile = App.new
   loop do
