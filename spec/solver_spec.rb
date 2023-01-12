@@ -8,6 +8,12 @@ describe Solver do
     it 'expect positive number ' do
       expect(solver.factorial(5)).to be >= 0
     end
+    it 'expect to raise error' do
+      expect(solver.factorial(-1)).to raise_error("invalid number")
+    end
+    it 'expect one' do
+      expect(solver.factorial(0)).to eq 1
+    end
     it 'Expect hello to be reversed to olleh' do
       expect(solver.reverse('hello')).to eq 'olleh'
     end
@@ -19,6 +25,9 @@ describe Solver do
     end
     it 'Expect 15 to return fizzbuzz' do
       expect(solver.fizzbuzz(15)).to eq 'fizzbuzz'
+    end
+    it 'Expect to equal that number' do
+      expect(solver.fizzbuzz(2)).to eq '2'
     end
   end
 end
