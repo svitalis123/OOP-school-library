@@ -9,7 +9,7 @@ describe Solver do
       expect(solver.factorial(5)).to be >= 0
     end
     it 'expect to raise error' do
-      expect(solver.factorial(-1)).to raise_error("invalid number")
+      expect(solver.factorial(-1)).to raise_error('invalid number')
     end
     it 'expect one' do
       expect(solver.factorial(0)).to eq 1
