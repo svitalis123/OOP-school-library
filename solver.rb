@@ -1,5 +1,6 @@
 class Solver
   def factorial(num)
+    raise 'Invalid number' if num.negative?
     return 1 if num.zero?
 
     num * factorial(num - 1)
@@ -17,7 +18,7 @@ class Solver
     elsif (num % 3).zero?
       'fizz'
     else
-      'not divisible'
+      num
     end
   end
 end

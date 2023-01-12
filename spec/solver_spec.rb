@@ -9,7 +9,7 @@ describe Solver do
       expect(solver.factorial(5)).to be >= 0
     end
     it 'expect to raise error' do
-      expect(solver.factorial(-1)).to raise_error('invalid number')
+      expect { solver.factorial(-1) }.to raise_error('Invalid number')
     end
     it 'expect one' do
       expect(solver.factorial(0)).to eq 1
@@ -27,7 +27,7 @@ describe Solver do
       expect(solver.fizzbuzz(15)).to eq 'fizzbuzz'
     end
     it 'Expect to equal that number' do
-      expect(solver.fizzbuzz(2)).to eq '2'
+      expect(solver.fizzbuzz(2)).to eq 2
     end
   end
 end
