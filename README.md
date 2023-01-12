@@ -29,7 +29,9 @@
 
 # 📖 TDD Project <a name="about-project"></a>
 
-** TDD Project ** is an app developed with TDD methodology.
+**TDD Project** is an app developed with TDD methodology. 
+## and
+**School Library** is an app for record what books are in the library and who borrows them.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -50,6 +52,9 @@
 With this app you can:
  - Can calculate factorial
  - Can calculate fizzbuzz
+ - Add new students or teachers.
+- Add new books.
+- Save records of who borrowed a given book and when.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
