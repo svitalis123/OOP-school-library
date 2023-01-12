@@ -4,9 +4,9 @@ class Solver
 
     num * factorial(num - 1)
   end
-  
+
   def reverse(word)
-    return word.reverse
+    word.reverse
   end
 
   def fizzbuzz(num)
