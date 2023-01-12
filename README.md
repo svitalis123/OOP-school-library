@@ -1,14 +1,6 @@
 
 <a name="readme-top"></a>
 
-<div align="center">
-  <img src="https://github.com/microverseinc/readme-template/raw/master/murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -35,8 +27,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 School Library <a name="about-project"></a>
+# 📖 TDD Project <a name="about-project"></a>
 
+**TDD Project** is an app developed with TDD methodology. 
+## and
 **School Library** is an app for record what books are in the library and who borrows them.
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -56,8 +50,9 @@
 ### Key Features <a name="key-features"></a>
 
 With this app you can:
-
-- Add new students or teachers.
+ - Can calculate factorial
+ - Can calculate fizzbuzz
+ - Add new students or teachers.
 - Add new books.
 - Save records of who borrowed a given book and when.
 
@@ -92,11 +87,17 @@ Clone this repository to your desired folder:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Vitalis Mutwiri*
+👤 **Vitalis Mutwiri**
 
 - GitHub: [@svitalis123](https://github.com/svitalis123)
 - Twitter: [@WilsonVitalis](https://twitter.com/WilsonVitalis)
 - LinkedIn: [vitalismutwiri](https://www.linkedin.com/in/vitalismutwiri/)
+
+👤 **Abdulai Samuel Moiwa**
+
+- GitHub: [@githubhandle](https://github.com/samuelmoiwa)
+- Twitter: [@twitterhandle](https://twitter.com/samuelmoiwa)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ing-abdulai-samuel-moiwa-726340142/)
 
 <!-- FUTURE FEATURES -->
 
