@@ -4,6 +4,10 @@ class Solver
 
     num * factorial(num - 1)
   end
+  
+  def reverse(word)
+    return word.reverse
+  end
 
   def fizzbuzz(num)
     if (num % 3).zero? && (num % 5).zero?
