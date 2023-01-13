@@ -22,3 +22,27 @@ class Solver
     end
   end
 end
+
+def breadth_first_search(graph)
+  confirm = Array.new(graph.keys.length, false)
+  queue = []
+  path = []
+  queue.push(0)
+  confirm[0] = true
+  until queue.empty?
+    current = queue.shift
+    path.push(current)
+    graph[current].each do |adjacent|
+      unless confirm[adjacent]
+        queue.push(adjacent)
+        confirm[adjacent] = true
+      end
+    end
+  end
+  path
+end
+
+p breadth_first_search({
+                         0 => [1, 2],
+                         1 => [2, 3]
+                       })
